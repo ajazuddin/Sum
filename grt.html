@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <script>
+    // koi function banaya bole to add function
+    function equal() {
+
+      var a, b, c;h    
+      // id se no. ki value pata chalegi thats why we use this syntex, here a is number which value is came from id "first"
+      a = Number(document.getElementById("input").value);
+
+      //same as above comment
+      b = Number(document.getElementById("second").value);
+
+      c = a + b;
+
+      //working same as above comment
+      document.getElementById("answer").value = c;
+
+    }
+
+  </script>
+
+</head>
+
+<body>
+
+  i/p-1 : <input id="first"> <br><br>
+
+  i/p-2 : <input id="second"> <br><br>
+
+  <button onclick="add()">Add</button>
+
+  result : <input id="answer">
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> Basic Calculator </title>
+
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            width: fit-content;
+        }
+
+        p {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            width: fit-content;
+        }
+
+        .Button:hover {
+            background-color: #1daf30;
+        }
+
+        .Button {
+            background-color: #3e82d0;
+            padding: 5px;
+            text-align: center;
+            border-radius: 5px ;
+            width: 40px;
+        }
+    </style>
+
+    <script>
+        // koi function banaya bole to add function
+        function add() {
+
+            var a, b, c;
+
+            // id se no. ki value pata chalegi thats why we use this syntex, here a is number which value is came from id "first"
+            a = Number(document.getElementById("first").value);
+
+            //same as above comment
+            b = Number(document.getElementById("second").value);
+
+            c = a + b;
+
+            //working same as above comment
+            document.getElementById("answer").value = c;
+
+        }
+        //subtract
+        function sub() {
+
+            a = Number(document.getElementById("first").value);
+
+            b = Number(document.getElementById("second").value);
+
+            c = a - b;
+
+            document.getElementById("answer").value = c;
+
+        }
+
+        //multiply
+        function mul() {
+
+            a = Number(document.getElementById("first").value);
+
+            b = Number(document.getElementById("second").value);
+
+            c = a * b;
+
+            document.getElementById("answer").value = c;
+
+        }
+
+        //divide
+        function div() {
+
+            a = Number(document.getElementById("first").value);
+
+            b = Number(document.getElementById("second").value);
+
+            c = a / b;
+
+            document.getElementById("answer").value = c;
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h2> Calculator </h2>
+
+    <p>I/P-1 : <br>
+        <input id="first"> <br> </p>
+
+    <p>I/P-2 : <br>
+        <input id="second"> <br></p>
+
+
+    <div>
+        <button class="Button" onclick="add()">Add</button>
+        <button class="Button" onclick="sub()">Sub</button>
+        <button class="Button" onclick="mul()">Multi</button>
+        <button class="Button" onclick="div">Div</button>
+    </div>
+
+    <p><br>Result : <br> <input id="answer"></p>
+
+</body>
+
+</html>
